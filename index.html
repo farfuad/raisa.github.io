@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Slides</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div class="container center">
+		<div class="slide active">
+			<h1>Hi raisu , it's your birthday. It's a really special day to me as my happiness was born on this day</h1>
+		</div>
+		<div class="slide">
+			<h1>I can't express how much happy i am to have you in my life. Allah has given me the bestest gift of my life.</h1>
+		</div>
+		<div class="slide">
+			<h1>You are the best. It's also our 3 month's anniversary. This very day is so much special to me.</h1>
+		</div>
+        <div class="slide">
+			<h1>It's your first birthday without your family and friends . I don't know if i can makeup that. But i will try my best .</h1>
+		</div>
+		<div class="slide">
+			<h1> If i start to write down all my feelings this slides won't cover that. You are the love of my life.</h1>
+		</div>
+		<div class="slide">
+			<h1> I am so happy that chose me to share this beautiful day. I hope your birthday goes as beautiful as you are. </h1>
+		</div>
+		<div class="slide">
+			<h1>You deserve only the best as you are best . You will get all the happiness in your life. </h1>
+		</div>
+		<div class="slide">
+			<h1>Thank you for all the memories we've ever made. No matter how old we get , I'll always cherish those memories.</h1>
+		</div>	
+		<div class="slide">
+			<h1>No matter how many birthdays we celebrate together, I will always be there holding your hand and make sure all your dreams come true.</h1>
+		</div>		
+		<div class="slide">
+			<h1>I hope you have an awesome birthday. You deserve it my love.</h1>
+		</div>	
+		<div class="slide">
+			<h1>It is easy to fall in love with you. And staying in love with you is even easier. I love celebrating birthdays with you, and I am looking forward to celebrating another one next year.</h1>
+		</div>	
+		<div class="slide">
+			<h1>Words are not enough to express my feelings for you. But my hug will help you understand how much I love you. My wish for you is to stay happy and cheerful always. Have the best Birthday</h1>
+		</div>
+		<div class="slide">
+			<h1>Yours and only yours Nafis Imtiaz <3 </h1>
+		</div>	
+	</div>
+
+	<script>
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+
+		document.addEventListener('contextmenu', function(event) {
+			event.preventDefault();
+
+			slides[currentSlide].classList.remove('active');
+
+			if (currentSlide === slides.length - 1) {
+				currentSlide = 0;
+			} else {
+				currentSlide++;
+			}
+
+			slides[currentSlide].classList.add('active');
+		});
+	</script>
+</body>
+</html>
